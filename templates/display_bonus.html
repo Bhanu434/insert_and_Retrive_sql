@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Dispaly Bonus :- </h1>
+        <table border="2px">
+            <tr>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>sal</th>
+            </tr>
+            {% for BO in QLBO %}
+            <tr>
+                <td>{{BO.Ename}}</td>
+                <td>{{BO.Job}}</td>
+                <td>{{BO.sal}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
